@@ -119,7 +119,6 @@ header{
     border-top: 2px black;
     margin-top: -15%;
     height: 50%;
-    max-height: 50%;
 }
 
 #intropic1{
@@ -130,7 +129,6 @@ header{
     border: 8px solid white;
     background-color:  rgba(163, 163, 163, 0.849);
     position: relative;
-    bottom: 25%;
     font-size: x-large;
     overflow: hidden;
 }
@@ -227,13 +225,15 @@ header{
     visibility: hidden;
 }
 .modal-container{
-    position: fixed;
+    position: absolute;
     background-color: white;
-    width: 30%;
+    width: fit-content;
     height:fit-content;
-    top: 35%;
+    top: 50%;
     left: 50%;
-    margin: -100px 0 0 -150px;
+    transform: translate(-50%, -50%);
+  padding: 2% 7%;
+  border-radius: 0.5rem;
 }
 .modal img{
     width: 50%;
@@ -500,6 +500,9 @@ footer hr{
        width: 30%;
        top: -50%;
     }
+    .modal-container{
+        width: 60%;
+    }
 }
 
 /*responsive for ipad
@@ -594,8 +597,14 @@ footer hr{
         width: 200px;
         height: 90%;
     }
+    .title{
+       margin-top: 20%;
+    }
    .title .p2{
     color: white;
+   }
+   #intropic1{
+    
    }
     
     .logo {
@@ -707,5 +716,43 @@ footer hr{
     }
      .text1{
         font-size: small;
+    }
+}
+
+@media  screen and (max-width: 1698px){
+    .quote1{
+        margin-left: 0%;
+        width: 98.5%;
+        position: relative;
+    }
+}
+
+/*iphone se landscape
+*/
+@media all and (max-width: 700px) {
+    /* Styles */
+    #intropic2{
+        width: 90%;
+        height: 94%;
+    }
+    .quote2{
+        display: none;
+    }
+    .block2 p{
+        font-size: small;
+    }
+    .block2{
+        width: 180%;
+        height: 50%;
+        margin-bottom: 2%;
+    }
+    .products {
+        font-size: 14px;
+    }
+    .description1 .text2{
+        font-size: 14px;
+    }
+    .item1{
+        margin-top: 0.099%;
     }
 }
