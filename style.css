@@ -603,9 +603,7 @@ footer hr{
    .title .p2{
     color: white;
    }
-   #intropic1{
-    
-   }
+
     
     .logo {
         display: none;
@@ -729,7 +727,7 @@ footer hr{
 
 /*iphone se landscape
 */
-@media all and (max-width: 700px) {
+@media all and (max-width: 700px) and (orientation: landscape) {
     /* Styles */
     #intropic2{
         width: 90%;
@@ -754,5 +752,14 @@ footer hr{
     }
     .item1{
         margin-top: 0.099%;
+    }
+}
+
+/*iphone xr landscape
+*/
+@media all and (max-width: 900px) and (orientation: landscape) {
+    /* Styles */
+    #myhover2{
+        margin-top: 10%;
     }
 }
